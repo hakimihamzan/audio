@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audio</title>
     <style>
-        .container {
-            text-align: center;
-        }
+      .container {
+        margin: 120px;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
+      <div style="margin: 50px">
         <div>
-           dsfs 
+          <img
+            src="assets/play.png"
+            alt="play"
+            width="42px"
+            onclick="play(event, 'flaws')"
+          />
         </div>
+        <audio id="flaws">
+          <source src="assets/flaws.m4a" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div style="margin: 50px">
         <div>
-           ONE more 
+          <img
+            src="assets/play.png"
+            alt="play"
+            width="42px"
+            onclick="play(event, 'where_i_leave')"
+          />
         </div>
+        <audio id="where_i_leave">
+          <source src="assets/where_i_leave.m4a" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
